@@ -11,13 +11,13 @@ while validTerm1 == False:
         term1Mathterm1AES = float(input("Maths 1: "))
         term1Physicterm1AES = float(input("Physics 1: "))
         term1ComputerProgramming1 = float(input("Computer Programming 1: "))
+        if term1AES < 0 or term1Mathterm1AES < 0 or term1Physicterm1AES < 0 or term1ComputerProgramming1 < 0 or term1AES > 100 or term1Mathterm1AES > 100 or term1Physicterm1AES > 100 or term1ComputerProgramming1 > 100:
+            print("That is not a valid input.")
+        else:
+            print("Thank you, Term 1 is inputted.")
+            validTerm1 = True
     except:
         print("That is not a number.")
-    if term1AES < 0 or term1Mathterm1AES < 0 or term1Physicterm1AES < 0 or term1ComputerProgramming1 < 0 or term1AES > 100 or term1Mathterm1AES > 100 or term1Physicterm1AES > 100 or term1ComputerProgramming1 > 100:
-        print("That is not a valid input.")
-    else:
-        print("Thank you, Term 1 is inputted.")
-        validTerm1 = True
 
 # Input loop for term 2
 while validTerm2 == False:
@@ -27,13 +27,14 @@ while validTerm2 == False:
         term2Chemistry1 = float(input("Chemistry 1: "))
         term2Mathterm1Mathterm1AES = float(input("Maths 2: "))
         term2Physicterm1Mathterm1AES = float(input("Physics 2: "))
+        if term2AES < 0 or term2Chemistry1 < 0 or term2Mathterm1Mathterm1AES < 0 or term2Physicterm1Mathterm1AES < 0 or term2AES > 100 or term2Chemistry1 > 100 or term2Mathterm1Mathterm1AES > 100 or term2Physicterm1Mathterm1AES > 100:
+            print("That is not a valid input.")
+        else:
+            print("Thank you, Term 2 is inputted.")
+            validTerm2 = True
     except:
         print("That is not a number.")
-    if term2AES < 0 or term2Chemistry1 < 0 or term2Mathterm1Mathterm1AES < 0 or term2Physicterm1Mathterm1AES < 0 or term2AES > 100 or term2Chemistry1 > 100 or term2Mathterm1Mathterm1AES > 100 or term2Physicterm1Mathterm1AES > 100:
-        print("That is not a valid input.")
-    else:
-        print("Thank you, Term 2 is inputted.")
-        validTerm2 = True
+
 
 # Input loop for term 3
 while validTerm3 == False:
@@ -43,13 +44,13 @@ while validTerm3 == False:
         term3Mathterm1Physicterm1AES = float(input("Maths 3: "))
         term3Physicterm1Physicterm1AES = float(input("Physics 3: "))
         term3CreativeDesign = float(input("Creative Design: "))
+        if term3AES < 0 or term3Mathterm1Physicterm1AES < 0 or term3Physicterm1Physicterm1AES < 0 or term3CreativeDesign < 0 or term3AES > 100 or term3Mathterm1Physicterm1AES > 100 or term3Physicterm1Physicterm1AES > 100 or term3CreativeDesign > 100:
+            print("That is not a valid input.")
+        else:
+            print("Thank you, Term 3 is inputted.")
+            validTerm3 = True
     except:
         print("That is not a number.")
-    if term3AES < 0 or term3Mathterm1Physicterm1AES < 0 or term3Physicterm1Physicterm1AES < 0 or term3CreativeDesign < 0 or term3AES > 100 or term3Mathterm1Physicterm1AES > 100 or term3Physicterm1Physicterm1AES > 100 or term3CreativeDesign > 100:
-        print("That is not a valid input.")
-    else:
-        print("Thank you, Term 3 is inputted.")
-        validTerm3 = True
 
 # Calculates average for all 12 and for Maths 2 and 3
 average1 = (term1AES+term1Mathterm1AES+term1Physicterm1AES+term1ComputerProgramming1+term2AES+term2Chemistry1+term2Mathterm1Mathterm1AES+term2Physicterm1Mathterm1AES+term3AES+term3Mathterm1Physicterm1AES+term3Physicterm1Physicterm1AES+term3CreativeDesign)/12
